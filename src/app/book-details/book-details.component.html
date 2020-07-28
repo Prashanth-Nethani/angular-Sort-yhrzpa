@@ -1,0 +1,12 @@
+<table matSort (matSortChange)="sortData($event)">
+<tr>
+<th mat-sort-header="book_Title" >BOOK TITLE</th>
+<th mat-sort-header="book_Author" >BOOK AUTHOR</th>
+<th mat-sort-header="book_Published" >BOOK PUBLISHED</th>
+</tr>
+<tr *ngFor="let b of sortedData" >
+<td>{{b.book_Title}}</td>
+<td>{{b.book_Author}}</td>
+<td>{{b.book_Published}}</td>
+</tr>
+</table>
